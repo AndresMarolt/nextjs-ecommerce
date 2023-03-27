@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;700&display=swap');
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -91,6 +93,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
+
 }
 
 a {
@@ -102,4 +105,24 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.card {
+  @apply mb-5 block border-gray-200 shadow-md  ;
+}
+
+.primary-button {
+  @apply  py-2 px-4 shadow outline-none bg-black text-white 
+}
+
+.default-button {
+  @apply py-2 px-4 shadow outline-none text-black
+}
+
+input, select, textarea {
+  @apply rounded border p-2 outline-none focus:ring ring-indigo-300;
+}
+
+.dropdown-link {
+  @apply flex p-2 hover:bg-gray-200;
 }

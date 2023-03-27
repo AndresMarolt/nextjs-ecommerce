@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/**/*.{js, ts, jsx, tsx}",
@@ -6,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      raleway: ["Raleway", 'sans-serif'],
+      lato: ["Lato", 'sans-serif']
+    }
   },
   plugins: [],
 }
